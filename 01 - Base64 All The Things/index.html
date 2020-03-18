@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base64 All The Things! &middot; Dribbble Shot</title>
+    <link rel="stylesheet" href="style.css">
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css?family=Rubik:400,400i,700&display=swap');
+        body {font-family: 'Rubik',-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";text-align: center;}
+        svg {
+            padding: 9rem 0 0;
+            width: 80px;
+        }
+        h1 {
+            color: green;
+            font-size: 45px;
+            position: relative;
+            z-index:2;
+        }
+        h1 span {
+            color: black;
+            display: block;
+            font-weight: 400;
+        }
+        p {
+            font-size: 24px;
+            font-style: italic;
+        }
+        .canvas {overflow:hidden;position: relative;}
+        .canvas:before, .canvas:after {
+            background: green;
+            content:'';
+            height: 200%;
+            position: absolute;
+            width: 200%;
+        }
+        .canvas:before {
+            left: -130%;
+            opacity: 0.1;
+            top: 20%;
+            transform: rotate(32deg);
+        }
+        .canvas:after {
+            bottom: 50%;
+            opacity: 0.1;
+            right: -60%;
+            transform: rotate(160deg);
+        }
+    </style>
+</head>
+<body>
+    <main class="canvas">
+        <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line></svg>
+        <h1>Base64 All The Things! <span>(Sometimes)</span></h1>
+        <p>uglyduck.ca/base64-all-the-things.html</p>
+    </main>
+</body>
+</html>
